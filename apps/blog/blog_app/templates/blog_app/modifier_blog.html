@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>modifier blog 1</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href={% static 'blog_app/style.css' %}/>
+</head>
+<body>
+<p> modifier blog</p>
+<form action="{% url 'blog-detail' blog_instance.id %}" method="POST">
+{% csrf_token %}
+{{ blog_instance.as_p }}
+
+<input type="submit" value = "validez"/>
+
+</form>
+</body>
+</html>

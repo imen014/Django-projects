@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>connexion utilisateur</title>
+</head>
+<body>
+<form method="post">
+{{ form.as_p }}
+{% csrf_token %}
+
+<input type="submit" value="valider"/>
+</form>
+</body>
+</html>

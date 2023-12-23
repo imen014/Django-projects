@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<p>l'article {{ article.titre }} de l'auteur {{ article.auteur }} 
+publiée en : {{ article.date_publication }} contains {{ article.contenu }}  </p>
+
+{% endblock %}

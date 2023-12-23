@@ -1,0 +1,9 @@
+body {
+    background-color: brown;
+}
+input {
+    background-color: antiquewhite;
+}
+input[type=submit]{
+    background-color: aqua;
+}

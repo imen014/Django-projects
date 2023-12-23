@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>afficher formulaire</title>
+<link rel="stylesheet" type="text/css" href="{% static 'books_management_app/style.css' %}" >
+</head>
+<body>
+<form action="" method="POST">
+{{ formulaire }}
+{% csrf_token %}
+
+<input type="submit" value="valider"/>
+</form>
+</body>
+</html>
+
+<!--9. **Personnalisation du formulaire :**
+   Personnalisez l'apparence du formulaire en utilisant des balises
+    HTML supplémentaires 
+ou des classes CSS pour les champs, les boutons, etc.
+-->

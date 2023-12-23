@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>formulaire de mise à jour</title>
+<link rel="stylesheet" type="text/css" href="{% static 'books_management_app/style.css' %}" >
+
+</head>
+<body>
+<form action="" method="POST">
+{{ formulaire_de_mise_a_jour }}
+{% csrf_token %}
+
+<input type="submit" value="valider"/>
+</form>
+</body>
+</html>

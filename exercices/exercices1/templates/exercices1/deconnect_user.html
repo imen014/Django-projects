@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>deconnexion utilisateur</title>
+</head>
+<body>
+<form method="post">
+{% csrf_token %}
+{% if user.is_authenticated %}
+<p>ur welcome {{ user.username }}</p>
+<a href="{% url 'deconnecter' %}">deconnexion</a>
+
+{% else %}
+<p>vous n'etes pas connecté </p>
+
+
+<input type="submit" value="deconnexion"/>
+{% endif %}
+</form>
+</body>
+</html>

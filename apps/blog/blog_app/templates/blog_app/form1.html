@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>blog 1</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'blog_app/style.css' %}"/>
+
+</head>
+<body>
+<p> creation blog</p>
+
+<form action="{% url 'creation-blog' %}" method="POST">
+{% csrf_token %}
+{{ blog1.as_p }}
+<input type="submit" value = "validez"/>
+
+</form>
+</body>
+</html>
